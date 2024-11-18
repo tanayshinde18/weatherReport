@@ -69,6 +69,12 @@ background-color: #1C0F13 ;
     margin-top: -5px;
 }
 
+.weather h3{
+
+    font-size: 21px;
+    margin-top: 10px;
+}
+
 .details{
 
     display: flex;
