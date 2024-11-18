@@ -22,7 +22,7 @@ async function checkWeather(city) {
     document.querySelector(".humidity").innerHTML =
       data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
-
+ document.querySelector(".feelsliketemp").innerHTML ="Feels like:" + Math.round(data.main.feels_like) + "°C";
     if (data.weather[0].main == "Clouds") {
       weatherIcon.src = "images/clouds.png";
     } else if (data.weather[0].main == "Rain") {
